@@ -17,7 +17,7 @@ model.fit(X_vectorized, y)
 
 # Ex resume 
 new_resume = [
-    "Python machine learning SQL data visualization"
+    "SQL data analysis communication teamwork python matplotlib pipelines data engineering basics"
 ]
 
 new_resume_vectorized = vectorizer.transform(new_resume)

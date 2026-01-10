@@ -14,7 +14,7 @@ model = LogisticRegression()
 model.fit(X_vectorized, y)
 # Ex resume
 new_resume = [
-    "SQL data analysis communication teamwork python matplotlib"
+    "SQL data analysis communication teamwork python matplotlib pipelines data engineering basics"
 ]
 
 # Convert resume
