@@ -1,3 +1,4 @@
+
 resume_text,label
 "Python machine learning data analysis pandas numpy SQL",1
 "Java Spring Boot backend microservices REST APIs",0
@@ -41,3 +42,107 @@ resume_text,label
 "Receptionist front desk phone scheduling",0
 "Data driven decision making analytics modeling",1
 "Warehouse picker packer logistics",0
+resume_text,label
+"Python backend development REST APIs Flask FastAPI PostgreSQL",1
+"Java Spring Boot microservices REST APIs Hibernate JPA",1
+"Software engineer backend services authentication authorization",1
+"Full stack developer React Node.js REST GraphQL",1
+"Data engineer Python SQL ETL pipelines Airflow",1
+"Machine learning engineer model training deployment Python",1
+"Python pandas numpy data analysis feature engineering",1
+"Scikit learn classification regression model evaluation",1
+"Cloud engineer AWS EC2 S3 Lambda infrastructure",1
+"DevOps engineer CI/CD Docker Kubernetes monitoring",1
+"Backend engineer system design scalability load balancing",1
+"Python automation scripting workflow optimization",1
+"Software developer unit testing pytest JUnit",1
+"API developer REST authentication OAuth JWT",1
+"Database engineer SQL optimization indexing normalization",1
+"Machine learning pipelines feature selection hyperparameter tuning",1
+"Data scientist exploratory data analysis visualization Python",1
+"Python SQL analytics dashboards statistics",1
+"Distributed systems concurrency multithreading fault tolerance",1
+"Software engineering intern code reviews agile scrum",1
+"Frontend developer JavaScript React UI state management",1
+"Mobile app developer Android Kotlin REST integration",1
+"Systems programming C++ memory management performance",1
+"Backend services logging monitoring observability",1
+"ML model deployment Docker FastAPI inference",1
+"Python numpy linear algebra statistics",1
+"ETL developer data ingestion transformation validation",1
+"Software engineer debugging profiling performance optimization",1
+"CI/CD pipelines GitHub Actions Jenkins",1
+"Version control Git branching pull requests",1
+"Customer service retail sales cash handling",0
+"Food service hospitality teamwork customer support",0
+"Warehouse associate inventory shipping receiving",0
+"Retail associate point of sale merchandising",0
+"Call center representative inbound outbound calls",0
+"Hotel front desk guest services reservations",0
+"Fast food cashier order processing",0
+"Construction labor site safety equipment handling",0
+"Delivery driver route planning customer interaction",0
+"Janitorial cleaning maintenance sanitation",0
+"Security guard surveillance access control",0
+"Administrative assistant scheduling emails filing",0
+"Marketing social media content creation branding",0
+"Childcare supervision activity planning",0
+"Event staff setup teardown coordination",0
+"Landscaping maintenance outdoor equipment",0
+"Warehouse picker packer logistics",0
+"Retail stock associate inventory restocking",0
+"Manufacturing assembly line quality control",0
+"Receptionist front desk phone scheduling",0
+"Food prep kitchen cleaning teamwork",0
+"Hospitality server guest experience coordination",0
+resume_text,label
+"Machine learning engineer supervised learning classification regression Python",1
+"Deep learning neural networks PyTorch model training optimization",1
+"Applied machine learning feature engineering model evaluation",1
+"Data scientist statistical modeling hypothesis testing machine learning",1
+"ML engineer training pipelines data preprocessing feature stores",1
+"Neural network architectures CNN RNN transformers",1
+"Python scikit learn logistic regression random forest",1
+"ML model evaluation cross validation ROC AUC precision recall",1
+"Probability statistics Bayesian inference machine learning",1
+"Deep learning model tuning regularization dropout batch normalization",1
+"Machine learning experimentation hyperparameter search grid random",1
+"ML pipelines deployment Docker FastAPI inference",1
+"Time series forecasting ARIMA LSTM regression models",1
+"Natural language processing tokenization embeddings transformers",1
+"Computer vision image classification object detection CNN",1
+"Feature selection dimensionality reduction PCA",1
+"Model monitoring drift detection performance tracking",1
+"ML experimentation tracking metrics reproducibility",1
+"Python numpy pandas data preprocessing for ML",1
+"End to end ML systems data ingestion training evaluation deployment",1
+"Supervised and unsupervised learning clustering KMeans",1
+"Reinforcement learning policy gradients Q learning",1
+"ML model interpretability SHAP feature importance",1
+"Gradient boosting XGBoost LightGBM model tuning",1
+"Statistical learning theory bias variance tradeoff",1
+"ML research experimentation ablation studies",1
+"Model deployment CI CD ML pipelines",1
+"Feature engineering categorical encoding scaling normalization",1
+"ML inference optimization latency throughput",1
+"Python ML project end to end implementation",1
+"Data analyst SQL dashboards reporting",0
+"Backend engineer REST APIs authentication",0
+"Frontend developer React UI components",0
+"IT support troubleshooting hardware software",0
+"DevOps engineer Kubernetes CI CD infrastructure",0
+"Database administrator SQL backups indexing",0
+"Cloud engineer AWS EC2 S3 networking",0
+"Business analyst requirements documentation",0
+"Software tester QA manual testing",0
+"Excel reporting pivot tables dashboards",0
+"Customer service support ticket resolution",0
+"Product manager roadmap stakeholder coordination",0
+"Marketing analytics campaign tracking",0
+"Data entry clerical accuracy",0
+"Technical writer documentation manuals",0
+"Network engineer routing switching firewalls",0
+"Cybersecurity analyst vulnerability scanning",0
+"Finance analyst budgeting forecasting",0
+"Operations coordinator logistics scheduling",0
+"UX designer wireframes prototypes usability testing",0
