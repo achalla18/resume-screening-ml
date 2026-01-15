@@ -24,3 +24,19 @@ new_resume_vectorized = vectorizer.transform(new_resume)
 probability = model.predict_proba(new_resume_vectorized)[0][1]
 
 print(f"Probability of being a good fit: {probability:.2%}")
+
+
+#confidence label
+
+def confidence_label(prob):
+    if prob >= 0.85:
+        return "Strong Match"
+    elif prob >= 0.65:
+        return "Moderate Match"
+    else:
+        return "Weak Match"
+
+confidence = confidence_label(probability)
+
+print(f"Confidence Level: {confidence}")
+
