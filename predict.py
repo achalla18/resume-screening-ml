@@ -2,32 +2,19 @@ import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
 
+#Train
 data = pd.read_csv("data.csv")
 
 X = data["resume_text"]
 y = data["label"]
 
-vectorizer = CountVectorizer(stop_words="english")
+vectorizer = CountVectorizer(stop_words="english", ngram_range=(1, 2))
 X_vectorized = vectorizer.fit_transform(X)
 
-model = LogisticRegression()
+model = LogisticRegression(max_iter=1000)
 model.fit(X_vectorized, y)
-# Ex resume
-new_resume = [
-    "SQL data analysis communication teamwork python matplotlib pipelines data engineering basics"
-]
 
-# Convert resume
-new_resume_vectorized = vectorizer.transform(new_resume)
-
-
-probability = model.predict_proba(new_resume_vectorized)[0][1]
-
-print(f"Probability of being a good fit: {probability:.2%}")
-
-
-#confidence label
-
+# Confidence Label
 def confidence_label(prob):
     if prob >= 0.85:
         return "Strong Match"
@@ -36,7 +23,26 @@ def confidence_label(prob):
     else:
         return "Weak Match"
 
+# Input
+print("\nPaste your resume below. Press ENTER twice when finished:\n")
+
+lines = []
+while True:
+    line = input()
+    if line.strip() == "":
+        break
+    lines.append(line)
+
+resume_text = " ".join(lines)
+
+# Predict
+resume_vectorized = vectorizer.transform([resume_text])
+probability = model.predict_proba(resume_vectorized)[0][1]
 confidence = confidence_label(probability)
 
-print(f"Confidence Level: {confidence}")
 
+# Output
+
+print("\n===== Resume Fit Analysis =====")
+print(f"Probability of Being a Good Fit: {probability:.2%}")
+print(f"Confidence Level: {confidence}")
