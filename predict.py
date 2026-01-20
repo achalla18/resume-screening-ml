@@ -1,8 +1,10 @@
 import pandas as pd
+import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
 
-#Train
+# Train
+
 data = pd.read_csv("data.csv")
 
 X = data["resume_text"]
@@ -14,7 +16,7 @@ X_vectorized = vectorizer.fit_transform(X)
 model = LogisticRegression(max_iter=1000)
 model.fit(X_vectorized, y)
 
-# Confidence Label
+
 def confidence_label(prob):
     if prob >= 0.85:
         return "Strong Match"
@@ -22,6 +24,16 @@ def confidence_label(prob):
         return "Moderate Match"
     else:
         return "Weak Match"
+
+def explain_prediction(vectorizer, model, resume_vectorized, top_n=8):
+    feature_names = np.array(vectorizer.get_feature_names_out())
+    coefs = model.coef_[0]
+
+    present_indices = resume_vectorized.nonzero()[1]
+    contributions = coefs[present_indices]
+
+    top_indices = present_indices[np.argsort(contributions)[-top_n:]]
+    return feature_names[top_indices]
 
 # Input
 print("\nPaste your resume below. Press ENTER twice when finished:\n")
@@ -40,9 +52,17 @@ resume_vectorized = vectorizer.transform([resume_text])
 probability = model.predict_proba(resume_vectorized)[0][1]
 confidence = confidence_label(probability)
 
+matched_terms = explain_prediction(
+    vectorizer,
+    model,
+    resume_vectorized
+)
 
 # Output
-
 print("\n===== Resume Fit Analysis =====")
 print(f"Probability of Being a Good Fit: {probability:.2%}")
 print(f"Confidence Level: {confidence}")
+
+print("\nTop Matching Skills / Signals:")
+for term in matched_terms:
+    print(f"  • {term}")
